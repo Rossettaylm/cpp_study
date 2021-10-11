@@ -1,0 +1,2 @@
+suibaindadian nishuone
+print("helloworld")
