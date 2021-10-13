@@ -3,7 +3,6 @@ using namespace std;
 
 class Box
 {
-
     // 直接将Triangular_iterator类声明为friend，可访问其private成员
     friend class Triangular_iterator;
     // 声明Triangular_iterator类中的某个函数为friend
@@ -13,9 +12,10 @@ private:
     double *_ptr;
     double _width;
     double _height;
-    static string name; // 所有类成员共用的静态变量
 
 public:
+    static string name; // 所有类成员共用的静态变量
+
     typedef Triangular_iterator iterator;
 
     Box(double length = 1.0, double width = 1.0, double height = 1.0); // 普通构造函数 constructor
@@ -26,9 +26,11 @@ public:
     double getWidth() const { return _width; }
     double getHeight() const { return _height; }
 
+    static void displayname() { cout << "The type of Box is " << name << endl; }
+    static void printtype() { cout << "The box type is rossetta." << endl; } // 静态成员函数 -> python中的staticmethod
+
     void displayVolume() const;
     Box &copy(const Box &obj);
-    static void printtype() { cout << "The box type is rossetta." << endl; } // 静态成员函数 -> python中的staticmethod
 };
 
 Box::Box(double length, double width, double height) : _ptr(new double), _width(width), _height(height) // 成员初始化列表
