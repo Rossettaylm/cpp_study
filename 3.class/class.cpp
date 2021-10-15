@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include "class.h"
-using namespace std;
+
+string Box::name = "magic"; // 类中静态变量的初始化
 
 int main()
 {
@@ -17,6 +18,7 @@ int main()
     box2.displayVolume();
 
     Box::printtype();
+    Box::displayname();
 
     return 0;
 }
