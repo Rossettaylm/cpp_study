@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class num_sequence
 {
     //    elem(pos): 返回pos位置上的元素
@@ -13,7 +16,6 @@ public:
     virtual const char *what_am_i() const = 0;
     static int max_elems() { return _max_elems; }
     virtual ostream &print(ostream &os = cout) const = 0;
-    virtual ostream &operator<<(ostream &os, const num_sequence &ns) { return ns.print(os); }
 
 protected:
     virtual void gen_elems(int pos) const = 0;
@@ -36,4 +38,9 @@ bool num_sequence::check_integrity(int pos, int size) const
     }
 
     return true;
+}
+
+ostream &operator<<(ostream &os, const num_sequence &ns)
+{
+    return ns.print(os);
 }

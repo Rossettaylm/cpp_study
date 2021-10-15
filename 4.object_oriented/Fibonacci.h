@@ -1,5 +1,7 @@
 #include "num_sequence.h"
 #include <vector>
+#include <iostream>
+using namespace std;
 
 class Fibonacci : public num_sequence
 {
@@ -20,6 +22,8 @@ protected:
     static vector<int> _elems;
     virtual void gen_elems(int pos) const;
 };
+
+vector<int> Fibonacci::_elems;
 
 // 虚函数在类外定义时不需要加virtual关键字
 int Fibonacci::elem(int pos) const
