@@ -1,6 +1,4 @@
-#include <iostream>
 using namespace std;
-
 class num_sequence
 {
     //    elem(pos): 返回pos位置上的元素
