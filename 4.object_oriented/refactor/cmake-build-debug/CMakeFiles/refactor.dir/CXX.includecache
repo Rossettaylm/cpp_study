@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/code_cpp/4.object_oriented/refactor/Fibonacci.h
+iostream
+-
+vector
+-
+num_sequence.h
+D:/code_cpp/4.object_oriented/refactor/num_sequence.h
+
+D:/code_cpp/4.object_oriented/refactor/main.cpp
+iostream
+-
+Fibonacci.h
+D:/code_cpp/4.object_oriented/refactor/Fibonacci.h
+
+D:/code_cpp/4.object_oriented/refactor/num_sequence.h
+iostream
+-
+vector
+-
+
