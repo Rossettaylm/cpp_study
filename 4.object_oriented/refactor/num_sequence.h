@@ -1,5 +1,4 @@
 /* 对于每个子类通用的函数，都放到抽象基类中 */
-
 #include <iostream>
 #include <vector>
 using namespace std;
