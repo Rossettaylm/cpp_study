@@ -3,11 +3,14 @@
 #include <vector>
 using namespace std;
 
+#ifndef REFACTOR_NUM_SEQUENCE_H
+#define REFACTOR_NUM_SEQUENCE_H
+
 class num_sequence
 {
 public:
     virtual ~num_sequence() {}
-    virtual char *what_am_i() const = 0;
+    virtual const char *what_am_i() const = 0;
     static int max_elem() { return _max_elem; }
     int length() const { return _length; }
     int begin_pos() const { return _begin_pos; }
@@ -24,41 +27,5 @@ protected:
     virtual bool check_integrity(int pos, int size) const;
 };
 
-bool num_sequence::check_integrity(int pos, int size) const
-{
-    if (pos <= 0 || pos > _max_elem)
-    {
-        cerr << "Error! Invalid position: " << pos << endl;
-        return false;
-    }
-    if (pos > size)
-    {
-        gen_elems(pos);
-    }
-}
 
-int num_sequence::elem(int pos) const
-{
-    if (!check_integrity(pos, _relems.size()))
-        return 0;
-    return _relems[pos - 1];
-}
-
-ostream &num_sequence::print(ostream &os) const
-{
-    int elem_pos = _begin_pos - 1;
-    int end_pos = elem_pos + _length;
-    if (end_pos > _relems.size())
-    {
-        gen_elems(end_pos);
-    }
-    while (elem_pos != end_pos)
-    {
-        cout << _relems[elem_pos++] << ' ';
-    }
-}
-
-ostream &operator<<(ostream &os, const num_sequence &ns)
-{
-    return ns.print(os);
-}
+#endif
