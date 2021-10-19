@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/cpp_projects/sequence/Fibonacci.cpp
+Fibonacci.h
+D:/cpp_projects/sequence/Fibonacci.h
+
+D:/cpp_projects/sequence/Fibonacci.h
+num_sequence.h
+D:/cpp_projects/sequence/num_sequence.h
+
+D:/cpp_projects/sequence/Pell.h
+num_sequence.h
+D:/cpp_projects/sequence/num_sequence.h
+
+D:/cpp_projects/sequence/main.cpp
+iostream
+-
+Fibonacci.h
+D:/cpp_projects/sequence/Fibonacci.h
+Pell.h
+D:/cpp_projects/sequence/Pell.h
+
+D:/cpp_projects/sequence/num_sequence.h
+iostream
+-
+vector
+-
+
