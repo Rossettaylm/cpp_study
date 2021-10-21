@@ -25,23 +25,10 @@ bool num_sequence::check_integrity(int pos, int size) const {
         std::cerr << "Invalid position: " << pos << std::endl;
         return false;
     }
-    if (pos > size)
-        gen_elems(pos);
+    if (pos > size) { gen_elems(pos); }
     return true;
 }
 
-inline int num_sequence::length() const {
-    return _length;
-}
-
-inline int num_sequence::begin_pos() const {
-    return _begin_pos;
-}
-
-inline int num_sequence::max_elem() const {
-    return _max_size;
-}
-
 std::ostream &operator<<(std::ostream &os, const num_sequence &ns) {
-    return ns.print();
+    return ns.print(os);
 }

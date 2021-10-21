@@ -18,9 +18,9 @@ public:
     virtual ~num_sequence() {}
     virtual const char *who_am_i() const = 0;
     int elem(int pos) const;
-    int length() const;
-    int begin_pos() const;
-    int max_elem() const;
+    int length() const { return _length; }
+    int begin_pos() const { return _begin_pos; }
+    static int max_elem() { return _max_size; }     // 类静态方法只能访问类静态成员，但是可以被类和对象调用
     std::ostream &print(std::ostream &os = std::cout) const;
 
 protected:

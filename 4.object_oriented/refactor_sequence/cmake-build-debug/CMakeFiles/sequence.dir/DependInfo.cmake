@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/cpp_projects/sequence/Fibonacci.cpp" "D:/cpp_projects/sequence/cmake-build-debug/CMakeFiles/sequence.dir/Fibonacci.cpp.obj"
-  "D:/cpp_projects/sequence/Pell.cpp" "D:/cpp_projects/sequence/cmake-build-debug/CMakeFiles/sequence.dir/Pell.cpp.obj"
-  "D:/cpp_projects/sequence/main.cpp" "D:/cpp_projects/sequence/cmake-build-debug/CMakeFiles/sequence.dir/main.cpp.obj"
-  "D:/cpp_projects/sequence/num_sequence.cpp" "D:/cpp_projects/sequence/cmake-build-debug/CMakeFiles/sequence.dir/num_sequence.cpp.obj"
+  "D:/code_cpp/4.object_oriented/refactor_sequence/Fibonacci.cpp" "D:/code_cpp/4.object_oriented/refactor_sequence/cmake-build-debug/CMakeFiles/sequence.dir/Fibonacci.cpp.obj"
+  "D:/code_cpp/4.object_oriented/refactor_sequence/Pell.cpp" "D:/code_cpp/4.object_oriented/refactor_sequence/cmake-build-debug/CMakeFiles/sequence.dir/Pell.cpp.obj"
+  "D:/code_cpp/4.object_oriented/refactor_sequence/main.cpp" "D:/code_cpp/4.object_oriented/refactor_sequence/cmake-build-debug/CMakeFiles/sequence.dir/main.cpp.obj"
+  "D:/code_cpp/4.object_oriented/refactor_sequence/num_sequence.cpp" "D:/code_cpp/4.object_oriented/refactor_sequence/cmake-build-debug/CMakeFiles/sequence.dir/num_sequence.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

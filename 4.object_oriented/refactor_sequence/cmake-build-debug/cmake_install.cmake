@@ -1,4 +1,4 @@
-# Install script for directory: D:/cpp_projects/sequence
+# Install script for directory: D:/code_cpp/4.object_oriented/refactor_sequence
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/cpp_projects/sequence/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/code_cpp/4.object_oriented/refactor_sequence/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

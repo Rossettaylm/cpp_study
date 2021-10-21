@@ -15,7 +15,7 @@ public:
     virtual const char *who_am_i() const {return "Fibonacci";}
 
 protected:
-    static std::vector<int> _elems;
+    static std::vector<int> _elems; // 类静态变量在类外定义，为类共有
     virtual void gen_elems(int pos) const override;
 
 };
